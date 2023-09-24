@@ -26,7 +26,7 @@ shona_text = file.read()
 shona_text
 
 import nltk
- nltk.download('punkt')
+nltk.download('punkt')
 
 import re
 from nltk.corpus import stopwords
