@@ -256,8 +256,6 @@ user_input = input("Please type five words in Shona: ")
 predicted_words = predict_next_words(model, tokenizer, user_input, num_words=3)
 print(f"The next words might be: {predicted_words}")
 
-!pip install streamlit
-
 import re
 import numpy as np
 import streamlit as st
