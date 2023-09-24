@@ -30,7 +30,7 @@ model = load_model('best_model2.h5')
 st.title('Next Word Prediction')
 
 
-link = '[Link to colab notebook](https://colab.research.google.com/drive/1emjGiFa2Oj_jzCalboPO50bnBQ9-_ffY?usp=sharing)'
+link = '[Link to Google Colab notebook](https://colab.research.google.com/drive/1emjGiFa2Oj_jzCalboPO50bnBQ9-_ffY?usp=sharing)'
 st.markdown(link, unsafe_allow_html=True)
 # loading
 with open('tokenizer.pickle', 'rb') as handle:
@@ -70,7 +70,6 @@ def predict_next_word(model, tokenizer, text, num_words=1):
 
     return ' '.join(text.split(' ')[-num_words:])
 
-link = '[Link to Google Colab notebook](https://colab.research.google.com/drive/1emjGiFa2Oj_jzCalboPO50bnBQ9-_ffY?usp=sharing)'
 
 def main():
     user_input = st.text_input('nyora manzwi mashanu')
