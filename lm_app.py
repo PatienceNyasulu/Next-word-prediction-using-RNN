@@ -77,7 +77,7 @@ def main():
 
     if st.button("Generate"):
         if (user_input is not None and len(lst)==5):
-            result = predict_next_word(model, tokenizer, user_input, num_words=1)
+            result = predict_next_word(model, tokenizer, user_input, num_words=3)
             st.success(result)
 
         else:
