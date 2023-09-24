@@ -8,7 +8,6 @@ Original file is located at
 """
 
 import numpy as np
-import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from keras.layers import Embedding, LSTM, Dense, Dropout, Bidirectional
