@@ -27,7 +27,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # Load the previously saved model
 model = load_model('best_model2.h5')
 
-st.title('Next Word Prediction in Chishona')
+st.title('Next Word Prediction')
 #st.button("https://https://colab.research.google.com/drive/1emjGiFa2Oj_jzCalboPO50bnBQ9-_ffY?usp=sharing")
 
 link = '[Link to colab noebook](https://colab.research.google.com/drive/1emjGiFa2Oj_jzCalboPO50bnBQ9-_ffY?usp=sharing)'
