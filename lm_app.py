@@ -30,7 +30,7 @@ model = load_model('best_model2.h5')
 st.title('Next Word Prediction')
 
 
-link = '[Link to Google Colab notebook](https://colab.research.google.com/drive/1XzMg_WWvgZaIdQA7VWbvpz9kXF54lTXg?usp=sharing)'
+link = '[Google Colab notebook](https://colab.research.google.com/drive/1XzMg_WWvgZaIdQA7VWbvpz9kXF54lTXg?usp=sharing)'
 st.markdown(link, unsafe_allow_html=True)
 # loading
 with open('tokenizer.pickle', 'rb') as handle:
@@ -72,7 +72,7 @@ def predict_next_word(model, tokenizer, text, num_words=1):
 
 
 def main():
-    user_input = st.text_input('Enter five shona words')
+    user_input = st.text_input('Enter Five shona words')
     lst = list(user_input.split())
 
     if st.button("Generate"):
@@ -81,7 +81,7 @@ def main():
             st.success(result)
 
         else:
-            st.write("Please enter five words")
+            st.write("Please enter FIVE words")
 
 if __name__ == '__main__':
     main()
